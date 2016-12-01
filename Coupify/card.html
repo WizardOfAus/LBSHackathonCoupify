@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Coupify." />
+<title>Credit Card - Coupify</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="shortcut icon" href="../favicon.png">
+
+</head>
+
+<body>
+    <div class="dark half center-block light">
+        <div class="iphone-container center-block">
+            <div class="phone-shape small">
+                <span class="button-one buttons"></span>
+                <span class="button-two buttons"></span>
+                <span class="button-three buttons"></span>
+                <span class="button-four button last"></span>
+                <div class="top-details">
+                    <span class="camera"></span>
+                    <span class="circle"></span>
+                    <span class="speaker"></span>
+                </div>
+                <div class="phone-screen">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="navbar-logo light">C</div>
+                        <img src="assets/demo-image.jpg" class="navbar-image">
+                         <p class="navbar-name">Pat Smith</p>
+                    </nav>
+                    <div class="account-sign-container">
+                        <h1 class="account-signin-title" style="font-size:0.9em;">Credit Card Details</h1>
+                    </div>
+
+                    <div class="card-wrapper" style="border-radius:0px; width:100px;"></div>
+                    <form>
+                        <input type="text"  class='account-signin-input' placeholder="Card Number" name="number">
+                        <input type="text"  class='account-signin-input' placeholder="First Name" name="first-name"/>
+                        <input type="text" class='account-signin-input' placeholder="Last Name" name="last-name"/>
+                        <input type="text" class='account-signin-input' placeholder="Expiry Date" name="expiry"/>
+                        <input type="text" class='account-signin-input' placeholder="CVC" name="cvc"/>
+                    </form>
+                    <a href="robot.html">
+                        <button type="button" class="center-block account-signin-button" style="margin-bottom:50px;">Submit</button>
+                    </a>
+                </div>
+                <div class="circle-button"></div>
+            </div>
+        </div>
+	</div>
+
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.card.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/new-card.js"></script>
+
+    <script>
+        var card = new Card({
+            form: 'form',
+            container: '.card-wrapper',
+            width: 90,
+
+            formSelectors: {
+                nameInput: 'input[name="first-name"], input[name="last-name"]'
+            }
+        });
+</script>
+
+
+
+</body>
+</html>
